@@ -492,6 +492,9 @@
             />
             <button class="footer-form-button" type="submit">
               Подписаться
+              <svg class="footer-send-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </div>
         </form>
@@ -509,29 +512,35 @@
         <div class="modal-inputs">
           <label class="modal-group">
             <span class="modal-label">Имя</span>
-            <input class="modal-input-info" type="text" />
-            <svg height="10px">
-              <use></use>
-            </svg>
+            <div class="modal-input-group">
+              <input class="modal-input-info" type="text" />
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </label>
 
           <label class="modal-group">
             <span class="modal-label">Телефон</span>
-            <input class="modal-input-info" type="tel" />
-            <svg height="10px">
-              <use></use>
-            </svg>
+            <div class="modal-input-group">
+              <input class="modal-input-info" type="tel" />
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </label>
 
           <label class="modal-group">
             <span class="modal-label">Почта</span>
-            <input class="modal-input-info" type="email" />
-            <svg height="10px">
-              <use></use>
-            </svg>
+            <div class="modal-input-group">
+              <input class="modal-input-info" type="email" />
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </label>
 
-          <div class="modal-group">
+          <div class="modal-group-comment">
             <label class="modal-label" for="comment">Комментарий</label>
             <textarea
               class="modal-comment"
@@ -542,7 +551,11 @@
           </div>
 
           <label class="modal-confirm">
-            <input class="modal-confirm-checkbox" type="checkbox" />
+            <input
+              class="modal-confirm-checkbox visually-hidden"
+              type="checkbox"
+            />
+            <span class="modal-checkbox-icon"></span>
             <span class="modal-confirm-conditions"
               >Соглашаюсь с рассылкой и принимаю
               <a href="">Условия договора</a>
